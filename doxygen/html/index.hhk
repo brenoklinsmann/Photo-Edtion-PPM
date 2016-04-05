@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557"><param name="Name" value="altura"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structpixels.html#a12857102343f2f2a198414bdcc70e51b"><param name="Name" value="B"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structpixels.html#a12857102343f2f2a198414bdcc70e51b"><param name="Name" value="pixels"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a12857102343f2f2a198414bdcc70e51b"><param name="Name" value="variaveis.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a148e3876077787926724625411d6e7a9"><param name="Name" value="b"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a76e8e2148ad859f734544e7fe99c698e"><param name="Name" value="decodingRLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a01f18f17a90429f912de8498af85e52b"><param name="Name" value="dimensao"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a65403d9fe23de0f5ad6ed320ab0dc9f2"><param name="Name" value="encodingRLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="funcoes_8h.html#a4ab6908f05f7d5b3ab05a51c2a1ed0ba"><param name="Name" value="escolherFiltros"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ab114d064c9be43b4a79f7be3174d637e"><param name="Name" value="filtroAmpliar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ac2e6afbf1e262061be6f63e6668c8274"><param name="Name" value="filtroBlurring"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ab5a0e7cf804c6319b2606e3e1a05f51f"><param name="Name" value="filtroBorda"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ab31dd0990c7c71218655622778b836b1"><param name="Name" value="filtroEspelhar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a357259c7342b9d01bf031ae40f33ef51"><param name="Name" value="filtroNegativo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a2e839bb9d2a958e2ea15ca6d148b2aa7"><param name="Name" value="filtroReduzir"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ad83631fc84d828fee8cc7855193574b1"><param name="Name" value="filtroRotacionar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html"><param name="Name" value="filtros.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a76e8e2148ad859f734544e7fe99c698e"><param name="Name" value="decodingRLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a65403d9fe23de0f5ad6ed320ab0dc9f2"><param name="Name" value="encodingRLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ab114d064c9be43b4a79f7be3174d637e"><param name="Name" value="filtroAmpliar"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ac2e6afbf1e262061be6f63e6668c8274"><param name="Name" value="filtroBlurring"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ab5a0e7cf804c6319b2606e3e1a05f51f"><param name="Name" value="filtroBorda"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ab31dd0990c7c71218655622778b836b1"><param name="Name" value="filtroEspelhar"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a357259c7342b9d01bf031ae40f33ef51"><param name="Name" value="filtroNegativo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a2e839bb9d2a958e2ea15ca6d148b2aa7"><param name="Name" value="filtroReduzir"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#ad83631fc84d828fee8cc7855193574b1"><param name="Name" value="filtroRotacionar"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a2d74b8a11ca32699dc2224776141fc3e"><param name="Name" value="filtroSharpening"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a178ff4726b49cb7db42e34e528f079ab"><param name="Name" value="filtroThresholding"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a2d74b8a11ca32699dc2224776141fc3e"><param name="Name" value="filtroSharpening"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="filtros_8h.html#a178ff4726b49cb7db42e34e528f079ab"><param name="Name" value="filtroThresholding"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="funcoes_8h.html"><param name="Name" value="funcoes.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="funcoes_8h.html#a4ab6908f05f7d5b3ab05a51c2a1ed0ba"><param name="Name" value="escolherFiltros"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="funcoes_8h.html#ac0aca0f34a52fbe7527a03517bc3347e"><param name="Name" value="mostrarMenu"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structpixels.html#ab8735735273b982cc3125e51fe46e2f4"><param name="Name" value="G"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a71867e609034d4dbd6d0ad8d84540e59"><param name="Name" value="g"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ab8735735273b982cc3125e51fe46e2f4"><param name="Name" value="G"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392"><param name="Name" value="i"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ac92b98b4981462ce34c8ba29b072d677"><param name="Name" value="id_ppm"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916"><param name="Name" value="j"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ab66ed8e0098c0a86b458672a55a9cca9"><param name="Name" value="k"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a89606eca6b563ec68d2da2e84657736f"><param name="Name" value="l"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314"><param name="Name" value="largura"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8c.html"><param name="Name" value="main.c"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="main"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a59ede333b9c44be714bc11f58ab6703e"><param name="Name" value="media_rgb"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="funcoes_8h.html#ac0aca0f34a52fbe7527a03517bc3347e"><param name="Name" value="mostrarMenu"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ad9b32a94f9054fd81f59b1118b8d53d2"><param name="Name" value="nome"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494"><param name="Name" value="opcao"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#aa53ec50096a4b351042f574801ee83fe"><param name="Name" value="opcao_inicial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structpixels.html"><param name="Name" value="pixels"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structpixels.html#a12857102343f2f2a198414bdcc70e51b"><param name="Name" value="B"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structpixels.html#ab8735735273b982cc3125e51fe46e2f4"><param name="Name" value="G"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structpixels.html#a3d90133d3051fbc4816d02efd9566d8e"><param name="Name" value="R"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a29d416a102687fec30593a5a9149d761"><param name="Name" value="qualidade"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structpixels.html#a3d90133d3051fbc4816d02efd9566d8e"><param name="Name" value="R"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#acab531abaa74a7e664e3986f2522b33a"><param name="Name" value="r"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a3d90133d3051fbc4816d02efd9566d8e"><param name="Name" value="R"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a0a06f50c808099546e057b445cc90c14"><param name="Name" value="tamanho"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html"><param name="Name" value="variaveis.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557"><param name="Name" value="altura"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a148e3876077787926724625411d6e7a9"><param name="Name" value="b"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a12857102343f2f2a198414bdcc70e51b"><param name="Name" value="B"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a01f18f17a90429f912de8498af85e52b"><param name="Name" value="dimensao"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ab8735735273b982cc3125e51fe46e2f4"><param name="Name" value="G"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a71867e609034d4dbd6d0ad8d84540e59"><param name="Name" value="g"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392"><param name="Name" value="i"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ac92b98b4981462ce34c8ba29b072d677"><param name="Name" value="id_ppm"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916"><param name="Name" value="j"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ab66ed8e0098c0a86b458672a55a9cca9"><param name="Name" value="k"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a89606eca6b563ec68d2da2e84657736f"><param name="Name" value="l"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314"><param name="Name" value="largura"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a59ede333b9c44be714bc11f58ab6703e"><param name="Name" value="media_rgb"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ad9b32a94f9054fd81f59b1118b8d53d2"><param name="Name" value="nome"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494"><param name="Name" value="opcao"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#aa53ec50096a4b351042f574801ee83fe"><param name="Name" value="opcao_inicial"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a29d416a102687fec30593a5a9149d761"><param name="Name" value="qualidade"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a3d90133d3051fbc4816d02efd9566d8e"><param name="Name" value="R"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#acab531abaa74a7e664e3986f2522b33a"><param name="Name" value="r"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#a0a06f50c808099546e057b445cc90c14"><param name="Name" value="tamanho"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ab8ff3a3394ef6cb005072ea5dc6ecc24"><param name="Name" value="zoom"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="variaveis_8h.html#ab8ff3a3394ef6cb005072ea5dc6ecc24"><param name="Name" value="zoom"></OBJECT>
+</UL>
+</BODY>
+</HTML>

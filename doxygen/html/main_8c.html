@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Projeto ITP/PTP: Referência do Arquivo main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto ITP/PTP
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Projeto final da disciplina PTP/ITP</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo main.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="funcoes_8h_source.html">funcoes.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Include da biblioteca local implementada '<a class="el" href="funcoes_8h.html">funcoes.h</a>'. Nessa biblioteca estao todos os includes necessarios para a execucao do programa. </p>
+</div><h2 class="groupheader">Funções</h2>
+<a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Caso o usuario escolha a opcao 1, ele será direcionado para a funcao de decodificacao de imagens, contida no arquivo '<a class="el" href="filtros_8h.html">filtros.h</a>'. Caso escolha a opcao 0, sera pedido que digite a imagem que se deseja processar. O programa entao abre o canal de comunicacao com o arquivo e checa se o arquivo realmente existe. Caso nao exista, pede-se que o usuario digite um arquivo valido.</p>
+<p>Variavel tamanho que armazena a quantidade de caracteres do nome do arquivo.</p>
+<p>Leitura do identificador ppm e da largura, altura e qualidade da imagem.</p>
+<p>Condicional para verificar qual das dimensões da imagem e maior. Essa checagem e necessaria para se trabalhar com imagens nao-quadradas em filtros como o de rotacionar, no qual a matriz do tipo 'pixels' que vai armazenar a imagem tera que ser quadrada e com dimensao igual a maior dimensao da imagem. Caso contrario, a operacao de rotacao nao funcionara.</p>
+<p>For para ler os valores R, G e B de cada pixel da imagem.</p>
+<p>Redirecionamento para a funcao que vai receber a escolha de filtro do usuario, contida no arquivo '<a class="el" href="funcoes_8h.html">funcoes.h</a>'. </p>
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;          {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    system(<span class="stringliteral">&quot;clear&quot;</span>);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    printf(<span class="stringliteral">&quot;|--------------------Processador de Imagens PPM--------------------|\n\n&quot;</span>);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">while</span>(1){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        printf(<span class="stringliteral">&quot;****************** MENU ******************\n&quot;</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        printf(<span class="stringliteral">&quot;0 - Utilizar processador de imagens.\n&quot;</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        printf(<span class="stringliteral">&quot;1 - Decodificar arquivo RLE.\n&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        printf(<span class="stringliteral">&quot;******************************************\n&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        printf(<span class="stringliteral">&quot;Informe a opção desejada: \n&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        scanf(<span class="stringliteral">&quot;%i&quot;</span>, &amp;<a class="code" href="variaveis_8h.html#aa53ec50096a4b351042f574801ee83fe">opcao_inicial</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="variaveis_8h.html#aa53ec50096a4b351042f574801ee83fe">opcao_inicial</a> != 0 &amp;&amp; <a class="code" href="variaveis_8h.html#aa53ec50096a4b351042f574801ee83fe">opcao_inicial</a> != 1){</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            printf(<span class="stringliteral">&quot;Opção inválida. Por favor, tente novamente.\n\n&quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="variaveis_8h.html#aa53ec50096a4b351042f574801ee83fe">opcao_inicial</a> == 1){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="filtros_8h.html#a76e8e2148ad859f734544e7fe99c698e">decodingRLE</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="variaveis_8h.html#aa53ec50096a4b351042f574801ee83fe">opcao_inicial</a> == 0){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        FILE *arquivo_ppm;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            printf(<span class="stringliteral">&quot;\nDigite o nome da imagem a ser modificada (com extensão): \n&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            scanf(<span class="stringliteral">&quot;%s&quot;</span>, <a class="code" href="variaveis_8h.html#ad9b32a94f9054fd81f59b1118b8d53d2">nome</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            arquivo_ppm = fopen(<a class="code" href="variaveis_8h.html#ad9b32a94f9054fd81f59b1118b8d53d2">nome</a>, <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">if</span> (arquivo_ppm == NULL){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                printf(<span class="stringliteral">&quot;Erro ao abrir imagem, por favor tente novamente.\n\n&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="variaveis_8h.html#a0a06f50c808099546e057b445cc90c14">tamanho</a> = strlen(<a class="code" href="variaveis_8h.html#ad9b32a94f9054fd81f59b1118b8d53d2">nome</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        fscanf(arquivo_ppm, <span class="stringliteral">&quot;%s %i %i %i&quot;</span>, <a class="code" href="variaveis_8h.html#ac92b98b4981462ce34c8ba29b072d677">id_ppm</a>, &amp;<a class="code" href="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314">largura</a>, &amp;<a class="code" href="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557">altura</a>, &amp;<a class="code" href="variaveis_8h.html#a29d416a102687fec30593a5a9149d761">qualidade</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314">largura</a> &gt;= <a class="code" href="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557">altura</a>){</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="variaveis_8h.html#a01f18f17a90429f912de8498af85e52b">dimensao</a> = <a class="code" href="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314">largura</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="variaveis_8h.html#a01f18f17a90429f912de8498af85e52b">dimensao</a> = <a class="code" href="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557">altura</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="structpixels.html">pixels</a> imagem[<a class="code" href="variaveis_8h.html#a01f18f17a90429f912de8498af85e52b">dimensao</a>][<a class="code" href="variaveis_8h.html#a01f18f17a90429f912de8498af85e52b">dimensao</a>];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0; <a class="code" href="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392">i</a> &lt; <a class="code" href="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557">altura</a>; ++<a class="code" href="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>){</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916">j</a> = 0; <a class="code" href="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916">j</a> &lt; <a class="code" href="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314">largura</a>; ++<a class="code" href="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>){</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                fscanf(arquivo_ppm, <span class="stringliteral">&quot;%i %i %i&quot;</span>, &amp;(imagem[<a class="code" href="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>][<a class="code" href="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>].<a class="code" href="variaveis_8h.html#a3d90133d3051fbc4816d02efd9566d8e">R</a>), &amp;(imagem[<a class="code" href="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>][<a class="code" href="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>].<a class="code" href="variaveis_8h.html#ab8735735273b982cc3125e51fe46e2f4">G</a>), &amp;(imagem[<a class="code" href="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>][<a class="code" href="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>].<a class="code" href="variaveis_8h.html#a12857102343f2f2a198414bdcc70e51b">B</a>));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        fclose(arquivo_ppm);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="funcoes_8h.html#a4ab6908f05f7d5b3ab05a51c2a1ed0ba">escolherFiltros</a>(imagem);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}<div class="ttc" id="variaveis_8h_html_a97336c0e22149c520368e33e2dd41314"><div class="ttname"><a href="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314">largura</a></div><div class="ttdeci">int largura</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html_a3d90133d3051fbc4816d02efd9566d8e"><div class="ttname"><a href="variaveis_8h.html#a3d90133d3051fbc4816d02efd9566d8e">R</a></div><div class="ttdeci">int R</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="structpixels_html"><div class="ttname"><a href="structpixels.html">pixels</a></div><div class="ttdef"><b>Definition:</b> variaveis.h:6</div></div>
+<div class="ttc" id="variaveis_8h_html_ac92b98b4981462ce34c8ba29b072d677"><div class="ttname"><a href="variaveis_8h.html#ac92b98b4981462ce34c8ba29b072d677">id_ppm</a></div><div class="ttdeci">char id_ppm[2]</div><div class="ttdef"><b>Definition:</b> variaveis.h:14</div></div>
+<div class="ttc" id="variaveis_8h_html_a0a06f50c808099546e057b445cc90c14"><div class="ttname"><a href="variaveis_8h.html#a0a06f50c808099546e057b445cc90c14">tamanho</a></div><div class="ttdeci">int tamanho</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="variaveis_8h.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html_ad9b32a94f9054fd81f59b1118b8d53d2"><div class="ttname"><a href="variaveis_8h.html#ad9b32a94f9054fd81f59b1118b8d53d2">nome</a></div><div class="ttdeci">char nome[50]</div><div class="ttdef"><b>Definition:</b> variaveis.h:14</div></div>
+<div class="ttc" id="variaveis_8h_html_ab8735735273b982cc3125e51fe46e2f4"><div class="ttname"><a href="variaveis_8h.html#ab8735735273b982cc3125e51fe46e2f4">G</a></div><div class="ttdeci">int G</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html_a01f18f17a90429f912de8498af85e52b"><div class="ttname"><a href="variaveis_8h.html#a01f18f17a90429f912de8498af85e52b">dimensao</a></div><div class="ttdeci">int dimensao</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html_a37d972ae0b47b9099e30983131d31916"><div class="ttname"><a href="variaveis_8h.html#a37d972ae0b47b9099e30983131d31916">j</a></div><div class="ttdeci">int j</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html_aa53ec50096a4b351042f574801ee83fe"><div class="ttname"><a href="variaveis_8h.html#aa53ec50096a4b351042f574801ee83fe">opcao_inicial</a></div><div class="ttdeci">int opcao_inicial</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="funcoes_8h_html_a4ab6908f05f7d5b3ab05a51c2a1ed0ba"><div class="ttname"><a href="funcoes_8h.html#a4ab6908f05f7d5b3ab05a51c2a1ed0ba">escolherFiltros</a></div><div class="ttdeci">void escolherFiltros(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> funcoes.h:26</div></div>
+<div class="ttc" id="filtros_8h_html_a76e8e2148ad859f734544e7fe99c698e"><div class="ttname"><a href="filtros_8h.html#a76e8e2148ad859f734544e7fe99c698e">decodingRLE</a></div><div class="ttdeci">void decodingRLE()</div><div class="ttdef"><b>Definition:</b> filtros.h:537</div></div>
+<div class="ttc" id="variaveis_8h_html_a29d416a102687fec30593a5a9149d761"><div class="ttname"><a href="variaveis_8h.html#a29d416a102687fec30593a5a9149d761">qualidade</a></div><div class="ttdeci">int qualidade</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html_a12857102343f2f2a198414bdcc70e51b"><div class="ttname"><a href="variaveis_8h.html#a12857102343f2f2a198414bdcc70e51b">B</a></div><div class="ttdeci">int B</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html_a778b6b04a3f5e4401e90b192cb05b557"><div class="ttname"><a href="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557">altura</a></div><div class="ttdeci">int altura</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

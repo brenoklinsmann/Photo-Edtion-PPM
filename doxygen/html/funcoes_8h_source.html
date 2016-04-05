@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Projeto ITP/PTP: Código-Fonte de funcoes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto ITP/PTP
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Projeto final da disciplina PTP/ITP</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">funcoes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="funcoes_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="variaveis_8h.html">variaveis.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="filtros_8h.html">filtros.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="funcoes_8h.html#ac0aca0f34a52fbe7527a03517bc3347e">   10</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="funcoes_8h.html#ac0aca0f34a52fbe7527a03517bc3347e">mostrarMenu</a>(){</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    printf(<span class="stringliteral">&quot;\n************************* Filtros ***********************\n\n&quot;</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    printf(<span class="stringliteral">&quot;&#39;thr&#39;: thresholding\n&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    printf(<span class="stringliteral">&quot;‘blu&#39;: blurring\n&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    printf(<span class="stringliteral">&quot;&#39;sha&#39;: sharpening\n&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    printf(<span class="stringliteral">&quot;&#39;rot&#39;: rotacionar imagem\n&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    printf(<span class="stringliteral">&quot;&#39;amp&#39;: ampliar imagem (Digite a quantidade de zoom)\n&quot;</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    printf(<span class="stringliteral">&quot;&#39;red&#39;: reduzir imagem (Digite a quantidade de zoom)\n&quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    printf(<span class="stringliteral">&quot;&#39;neg&#39;: filtro negativo\n&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    printf(<span class="stringliteral">&quot;&#39;esp&#39;: filtro espelhar\n&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    printf(<span class="stringliteral">&quot;&#39;bor&#39;: detecção de bordas\n&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    printf(<span class="stringliteral">&quot;&#39;rle&#39;: codificar arquivo de imagem utilizando RLE\n&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    printf(<span class="stringliteral">&quot;&#39;sair&#39;: sair do programa\n&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    printf(<span class="stringliteral">&quot;\n********************************************************\n&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    printf(<span class="stringliteral">&quot;Digite um filtro para transformar a imagem digitada:\n&quot;</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="funcoes_8h.html#a4ab6908f05f7d5b3ab05a51c2a1ed0ba">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="funcoes_8h.html#a4ab6908f05f7d5b3ab05a51c2a1ed0ba">escolherFiltros</a>(<a class="code" href="structpixels.html">pixels</a> imagem[<a class="code" href="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557">altura</a>][<a class="code" href="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314">largura</a>]){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="funcoes_8h.html#ac0aca0f34a52fbe7527a03517bc3347e">mostrarMenu</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    scanf(<span class="stringliteral">&quot;%s&quot;</span>, <a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;thr&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="filtros_8h.html#a178ff4726b49cb7db42e34e528f079ab">filtroThresholding</a>(imagem);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;blu&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="filtros_8h.html#ac2e6afbf1e262061be6f63e6668c8274">filtroBlurring</a>(imagem); </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;sha&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="filtros_8h.html#a2d74b8a11ca32699dc2224776141fc3e">filtroSharpening</a>(imagem); </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;rot&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="filtros_8h.html#ad83631fc84d828fee8cc7855193574b1">filtroRotacionar</a>(imagem); </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;amp&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="filtros_8h.html#ab114d064c9be43b4a79f7be3174d637e">filtroAmpliar</a>(imagem);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;red&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="filtros_8h.html#a2e839bb9d2a958e2ea15ca6d148b2aa7">filtroReduzir</a>(imagem);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;neg&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="filtros_8h.html#a357259c7342b9d01bf031ae40f33ef51">filtroNegativo</a>(imagem); </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;esp&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="filtros_8h.html#ab31dd0990c7c71218655622778b836b1">filtroEspelhar</a>(imagem); </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;bor&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="filtros_8h.html#ab5a0e7cf804c6319b2606e3e1a05f51f">filtroBorda</a>(imagem);    </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;rle&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="filtros_8h.html#a65403d9fe23de0f5ad6ed320ab0dc9f2">encodingRLE</a>();  </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((strcmp(<a class="code" href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a>,<span class="stringliteral">&quot;sair&quot;</span>)) == 0){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        printf(<span class="stringliteral">&quot;Até a próxima!\n&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        system(<span class="stringliteral">&quot;clear&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        printf(<span class="stringliteral">&quot;Opção inválida. Tente novamente.\n&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="funcoes_8h.html#a4ab6908f05f7d5b3ab05a51c2a1ed0ba">escolherFiltros</a>(imagem);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="ttc" id="filtros_8h_html_a2d74b8a11ca32699dc2224776141fc3e"><div class="ttname"><a href="filtros_8h.html#a2d74b8a11ca32699dc2224776141fc3e">filtroSharpening</a></div><div class="ttdeci">void filtroSharpening(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> filtros.h:106</div></div>
+<div class="ttc" id="variaveis_8h_html_a97336c0e22149c520368e33e2dd41314"><div class="ttname"><a href="variaveis_8h.html#a97336c0e22149c520368e33e2dd41314">largura</a></div><div class="ttdeci">int largura</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+<div class="ttc" id="variaveis_8h_html"><div class="ttname"><a href="variaveis_8h.html">variaveis.h</a></div></div>
+<div class="ttc" id="filtros_8h_html_ab114d064c9be43b4a79f7be3174d637e"><div class="ttname"><a href="filtros_8h.html#ab114d064c9be43b4a79f7be3174d637e">filtroAmpliar</a></div><div class="ttdeci">void filtroAmpliar(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> filtros.h:246</div></div>
+<div class="ttc" id="funcoes_8h_html_ac0aca0f34a52fbe7527a03517bc3347e"><div class="ttname"><a href="funcoes_8h.html#ac0aca0f34a52fbe7527a03517bc3347e">mostrarMenu</a></div><div class="ttdeci">void mostrarMenu()</div><div class="ttdef"><b>Definition:</b> funcoes.h:10</div></div>
+<div class="ttc" id="filtros_8h_html_ad83631fc84d828fee8cc7855193574b1"><div class="ttname"><a href="filtros_8h.html#ad83631fc84d828fee8cc7855193574b1">filtroRotacionar</a></div><div class="ttdeci">void filtroRotacionar(pixels imagem[dimensao][dimensao])</div><div class="ttdef"><b>Definition:</b> filtros.h:170</div></div>
+<div class="ttc" id="structpixels_html"><div class="ttname"><a href="structpixels.html">pixels</a></div><div class="ttdef"><b>Definition:</b> variaveis.h:6</div></div>
+<div class="ttc" id="variaveis_8h_html_a8b2727c2f0a369048180f0378cb09494"><div class="ttname"><a href="variaveis_8h.html#a8b2727c2f0a369048180f0378cb09494">opcao</a></div><div class="ttdeci">char opcao[4]</div><div class="ttdef"><b>Definition:</b> variaveis.h:14</div></div>
+<div class="ttc" id="filtros_8h_html_a2e839bb9d2a958e2ea15ca6d148b2aa7"><div class="ttname"><a href="filtros_8h.html#a2e839bb9d2a958e2ea15ca6d148b2aa7">filtroReduzir</a></div><div class="ttdeci">void filtroReduzir(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> filtros.h:289</div></div>
+<div class="ttc" id="filtros_8h_html_a357259c7342b9d01bf031ae40f33ef51"><div class="ttname"><a href="filtros_8h.html#a357259c7342b9d01bf031ae40f33ef51">filtroNegativo</a></div><div class="ttdeci">void filtroNegativo(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> filtros.h:344</div></div>
+<div class="ttc" id="filtros_8h_html_a178ff4726b49cb7db42e34e528f079ab"><div class="ttname"><a href="filtros_8h.html#a178ff4726b49cb7db42e34e528f079ab">filtroThresholding</a></div><div class="ttdeci">void filtroThresholding(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> filtros.h:6</div></div>
+<div class="ttc" id="funcoes_8h_html_a4ab6908f05f7d5b3ab05a51c2a1ed0ba"><div class="ttname"><a href="funcoes_8h.html#a4ab6908f05f7d5b3ab05a51c2a1ed0ba">escolherFiltros</a></div><div class="ttdeci">void escolherFiltros(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> funcoes.h:26</div></div>
+<div class="ttc" id="filtros_8h_html_ab31dd0990c7c71218655622778b836b1"><div class="ttname"><a href="filtros_8h.html#ab31dd0990c7c71218655622778b836b1">filtroEspelhar</a></div><div class="ttdeci">void filtroEspelhar(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> filtros.h:370</div></div>
+<div class="ttc" id="filtros_8h_html"><div class="ttname"><a href="filtros_8h.html">filtros.h</a></div></div>
+<div class="ttc" id="filtros_8h_html_ab5a0e7cf804c6319b2606e3e1a05f51f"><div class="ttname"><a href="filtros_8h.html#ab5a0e7cf804c6319b2606e3e1a05f51f">filtroBorda</a></div><div class="ttdeci">void filtroBorda(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> filtros.h:406</div></div>
+<div class="ttc" id="filtros_8h_html_a65403d9fe23de0f5ad6ed320ab0dc9f2"><div class="ttname"><a href="filtros_8h.html#a65403d9fe23de0f5ad6ed320ab0dc9f2">encodingRLE</a></div><div class="ttdeci">void encodingRLE()</div><div class="ttdef"><b>Definition:</b> filtros.h:490</div></div>
+<div class="ttc" id="filtros_8h_html_ac2e6afbf1e262061be6f63e6668c8274"><div class="ttname"><a href="filtros_8h.html#ac2e6afbf1e262061be6f63e6668c8274">filtroBlurring</a></div><div class="ttdeci">void filtroBlurring(pixels imagem[altura][largura])</div><div class="ttdef"><b>Definition:</b> filtros.h:53</div></div>
+<div class="ttc" id="variaveis_8h_html_a778b6b04a3f5e4401e90b192cb05b557"><div class="ttname"><a href="variaveis_8h.html#a778b6b04a3f5e4401e90b192cb05b557">altura</a></div><div class="ttdeci">int altura</div><div class="ttdef"><b>Definition:</b> variaveis.h:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>
